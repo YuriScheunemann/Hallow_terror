@@ -8,13 +8,14 @@ public class Movimentacao : MonoBehaviour
     public float moveSpeed = 20.0f;
     Vector3 movement;
 
-
+    
     void Update()
     {
         float xAxis = Input.GetAxisRaw("Horizontal");
         float zAxis = Input.GetAxisRaw("Vertical");
         movement = new Vector3(xAxis, 0, zAxis) * moveSpeed * Time.deltaTime;
-        rb.MovePosition(transform.position + movement);
+        rb.MovePosition(transform.position + movement);      
+
 
         if (movement.x != 0 || movement.z != 0)
         {
@@ -56,6 +57,7 @@ public class Movimentacao : MonoBehaviour
 
     void Jump()
     {
+       
         if (Mathf.Abs(rb.linearVelocity.y) < 0.01f)
         {
             rb.AddForce(Vector3.up * 3, ForceMode.Impulse);
