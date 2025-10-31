@@ -1,8 +1,51 @@
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody))]
+[RequireComponent(typeof(Animator))]
 public class Movimentacao : MonoBehaviour
 {
+    public float moveSpeed = 5f;
+    public float rotationSpeed = 100f;
 
+    private Rigidbody rb;
+   
+    private float horizontalInput;
+    private float verticalInput;
+    void Start()
+    {
+        rb = GetComponent<Rigidbody>();       
+        rb.freezeRotation = true;
+    }
+
+    void Update()
+    {
+        horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");
+    }
+    void FixedUpdate()
+    {
+        Move();
+        Rotate();
+    }
+
+    void Move()
+    {
+        Vector3 moveDirection = transform.forward * verticalInput * moveSpeed;
+        rb.linearVelocity = new Vector3(moveDirection.x, rb.linearVelocity.y, moveDirection.z);        
+      
+    }
+    void Rotate()
+    {
+        // Gira o personagem com A/D
+        float rotation = horizontalInput * rotationSpeed * Time.fixedDeltaTime;
+        transform.Rotate(0, rotation, 0);
+    }
+
+
+
+
+
+    /*
     public Rigidbody rb;
     public Animator anim;
     public float moveSpeed = 20.0f;
@@ -62,5 +105,5 @@ public class Movimentacao : MonoBehaviour
         {
             rb.AddForce(Vector3.up * 3, ForceMode.Impulse);
         }
-    }
+    }*/
 }
