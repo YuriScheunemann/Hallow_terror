@@ -385,7 +385,7 @@ Transform:
   m_GameObject: {fileID: 109094604}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 0.029817957, z: -0, w: 0.9995554}
-  m_LocalPosition: {x: 8.1345, y: 0.08762002, z: 43.399384}
+  m_LocalPosition: {x: 8.33, y: 0.08762002, z: 46.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -714,8 +714,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 12.780751, y: 3.421444, z: 7.4470687}
-  m_Center: {x: 0.062925264, y: 1.2107246, z: -5.0124593}
+  m_Size: {x: 12.780751, y: 3.2989454, z: 7.4470687}
+  m_Center: {x: 0.062925264, y: 1.1494752, z: -5.0124593}
 --- !u!54 &157291703
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1354,6 +1354,59 @@ Transform:
   - {fileID: 1514661914}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &820259924
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 820259925}
+  - component: {fileID: 820259926}
+  m_Layer: 0
+  m_Name: GroundCurva (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &820259925
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820259924}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.15107144, z: -0, w: 0.9885229}
+  m_LocalPosition: {x: 19.87, y: -15.56, z: 41.52}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1434042646}
+  m_LocalEulerAnglesHint: {x: 0, y: -17.378, z: 0}
+--- !u!135 &820259926
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 820259924}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 16.85799
+  m_Center: {x: -12.553015, y: 0, z: 3.8049736}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2179,6 +2232,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1571671385}
+  - {fileID: 820259925}
   - {fileID: 109094607}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
