@@ -2,23 +2,41 @@ using UnityEngine;
 
 public class Lanterna : MonoBehaviour
 {
-   
     public Light lanternaLight;
+
+    [Header("Áudio (sem AudioSource)")]
+    public AudioClip toggleOnClip;   
+    public AudioClip toggleOffClip; 
+    [Range(0f, 1f)]
+    public float volume = 1f;
+    public KeyCode toggleKey = KeyCode.F;
 
     void Start()
     {
-        
         if (lanternaLight != null)
             lanternaLight.enabled = false;
+
     }
 
     void Update()
     {
-        
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(toggleKey))
         {
             if (lanternaLight != null)
-                lanternaLight.enabled = !lanternaLight.enabled;
+            {
+                bool isOn = !lanternaLight.enabled;
+                lanternaLight.enabled = isOn;
+                PlayToggleSound(isOn);
+            }
         }
+    }
+
+    void PlayToggleSound(bool isOn)
+    {
+        AudioClip clip = isOn ? toggleOnClip : toggleOffClip;
+        if (clip == null) return;
+
+        
+        AudioSource.PlayClipAtPoint(clip, transform.position, volume);
     }
 }

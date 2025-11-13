@@ -358,6 +358,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LanternaSimples
   lanternaLight: {fileID: 2102263363}
+  toggleOnClip: {fileID: 8300000, guid: e26da0f7846c5d5409e0ba046bff3c61, type: 3}
+  toggleOffClip: {fileID: 8300000, guid: e26da0f7846c5d5409e0ba046bff3c61, type: 3}
+  volume: 1
+  toggleKey: 102
 --- !u!1 &468688801
 GameObject:
   m_ObjectHideFlags: 0
