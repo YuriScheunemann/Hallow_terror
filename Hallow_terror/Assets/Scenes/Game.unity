@@ -21453,21 +21453,29 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
+    - target: {fileID: 5405715046456698762, guid: 3e39dec99844b3446bc3c79168a2f715, type: 3}
+      propertyPath: m_Size.z
+      value: 3.400306
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405715046456698762, guid: 3e39dec99844b3446bc3c79168a2f715, type: 3}
+      propertyPath: m_Center.z
+      value: 4.455633
+      objectReference: {fileID: 0}
     - target: {fileID: 5413120844334983711, guid: 3e39dec99844b3446bc3c79168a2f715, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
     - target: {fileID: 5441517646839814764, guid: 3e39dec99844b3446bc3c79168a2f715, type: 3}
       propertyPath: m_Size.z
-      value: 1.3968382
+      value: 3.4003055
       objectReference: {fileID: 0}
     - target: {fileID: 5441517646839814764, guid: 3e39dec99844b3446bc3c79168a2f715, type: 3}
       propertyPath: m_Center.y
-      value: 11.061245
+      value: 11.061203
       objectReference: {fileID: 0}
     - target: {fileID: 5441517646839814764, guid: 3e39dec99844b3446bc3c79168a2f715, type: 3}
       propertyPath: m_Center.z
-      value: 3.453903
+      value: 4.4556327
       objectReference: {fileID: 0}
     - target: {fileID: 5649225634475403463, guid: 3e39dec99844b3446bc3c79168a2f715, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -21523,7 +21531,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7493637096896048591, guid: 3e39dec99844b3446bc3c79168a2f715, type: 3}
       propertyPath: m_Size.z
-      value: 1.396838
+      value: 3.400306
+      objectReference: {fileID: 0}
+    - target: {fileID: 7493637096896048591, guid: 3e39dec99844b3446bc3c79168a2f715, type: 3}
+      propertyPath: m_Center.z
+      value: 4.455633
       objectReference: {fileID: 0}
     - target: {fileID: 7640055090852733189, guid: 3e39dec99844b3446bc3c79168a2f715, type: 3}
       propertyPath: m_StaticEditorFlags
