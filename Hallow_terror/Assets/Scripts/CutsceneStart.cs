@@ -1,15 +1,15 @@
 using UnityEngine;
-
+using UnityEngine.Events;
 public class CutsceneStart : MonoBehaviour
-{
-    public GameObject cutscene;
+{    
+    public UnityEvent UnityEvent;
     private void OnTriggerEnter(Collider other)
     {
 
        
        if(other.gameObject.CompareTag("Player"))
         {
-            cutscene.SetActive(true);
+            UnityEvent.Invoke();
         }
     }
 }
