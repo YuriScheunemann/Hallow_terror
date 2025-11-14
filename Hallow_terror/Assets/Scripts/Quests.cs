@@ -1,8 +1,7 @@
 using UnityEngine;
 using TMPro;
 public class Quests : MonoBehaviour
-{
-    public CutsceneStart cutsceneStart;
+{   
     public int[] questCont;
     string[] queststxt;
     [SerializeField]
@@ -13,6 +12,13 @@ public class Quests : MonoBehaviour
        queststxt = new string[5];
        queststxt[0] = "Encontrar lanterna";
        queststxt[1] = "Voltar para a vila";
+       queststxt[2] = "Volte o mais rápido possível para a vila!";
+       queststxt[3] = "Busque informações sobre os habitantes da vila";
+       queststxt[4] = "Fuja imediatamente da vila!";
+       queststxt[5] = "Verifique a casa isolada";
+       queststxt[6] = "Encontre a cura";
+       queststxt[7] = "Fuja do boss";
+       queststxt[8] = "Despeje a cura no rio";
 
        questAtual.text = queststxt[indexQuest];
     }
