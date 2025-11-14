@@ -669,12 +669,12 @@ GameObject:
   - component: {fileID: 668784936}
   - component: {fileID: 668784937}
   m_Layer: 0
-  m_Name: LiquidoLaranja
+  m_Name: BixoDesconhecido_Cutsc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &668784936
 Transform:
   m_ObjectHideFlags: 0
@@ -965,6 +965,88 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4133114792468555718, guid: e01c9f111d1c8d447b4a3b9121cb9c35, type: 3}
   m_PrefabInstance: {fileID: 462024636066630537}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1669671027
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1669671030}
+  - component: {fileID: 1669671029}
+  - component: {fileID: 1669671028}
+  m_Layer: 0
+  m_Name: BixoDesconhecidoAtivador
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 2147483647
+  m_IsActive: 1
+--- !u!114 &1669671028
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669671027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce9362e6879ccef408456c384b7cab68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneStart
+  UnityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 668784935}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+  Quests: {fileID: 1751922223}
+--- !u!65 &1669671029
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669671027}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 48.229397, y: 9.376697, z: 8.101166}
+  m_Center: {x: 1.7186222, y: 4.1883483, z: 3.5505831}
+--- !u!4 &1669671030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1669671027}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.045822978, z: -0, w: 0.9989496}
+  m_LocalPosition: {x: -14.54, y: 1.86002, z: 259.6043}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -5.253, z: 0}
 --- !u!1001 &1720942727
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1448,7 +1530,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a2c6f08aaef5974a96aeb7d810e5aa4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Quests
-  cutsceneStart: {fileID: 0}
   questCont: 
   questAtual: {fileID: 1751922221}
   indexQuest: 0
@@ -2189,7 +2270,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1930454670
 Transform:
   m_ObjectHideFlags: 0
@@ -2499,3 +2580,4 @@ SceneRoots:
   - {fileID: 1827538411}
   - {fileID: 650538501}
   - {fileID: 405759356}
+  - {fileID: 1669671030}
