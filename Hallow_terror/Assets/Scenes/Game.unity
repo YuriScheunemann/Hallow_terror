@@ -1965,7 +1965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4991,17 +4991,97 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8424569919280752938, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2239965893361130109, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1091.6998
+      objectReference: {fileID: 0}
+    - target: {fileID: -2239965893361130109, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1091.6998
+      objectReference: {fileID: 0}
+    - target: {fileID: -2239965893361130109, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1091.6998
+      objectReference: {fileID: 0}
+    - target: {fileID: -1512877270392634022, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -259972160606440404, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
       propertyPath: m_Name
       value: PlayerIcon
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 973536072357792048, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1091.6998
+      objectReference: {fileID: 0}
+    - target: {fileID: 973536072357792048, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1091.6998
+      objectReference: {fileID: 0}
+    - target: {fileID: 973536072357792048, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1091.6998
+      objectReference: {fileID: 0}
+    - target: {fileID: 5297341235354603773, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1091.6998
+      objectReference: {fileID: 0}
+    - target: {fileID: 5297341235354603773, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1091.6998
+      objectReference: {fileID: 0}
+    - target: {fileID: 5297341235354603773, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1091.6998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7036213049465896255, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7876023681238672744, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1091.6998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7876023681238672744, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1091.6998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7876023681238672744, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1091.6998
+      objectReference: {fileID: 0}
+    - target: {fileID: 8699652204047898494, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879528566716807029, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1102.3999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879528566716807029, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1102.3999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8879528566716807029, guid: ed77f7d14e008ec4494bbcfdefc1fa65, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1102.3999
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -6192,8 +6272,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -6924,8 +7004,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 16777215
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
