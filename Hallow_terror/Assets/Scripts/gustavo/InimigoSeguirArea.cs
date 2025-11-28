@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class Enemy_GoToArea : MonoBehaviour
+public class InimigoSegueArea : MonoBehaviour
 {
-    public Transform targetArea;     
-    public Transform player;        
+    public Transform targetArea;
+    public Transform player;
     public float moveSpeed = 3f;
     public float triggerDistance = 1.2f;
 
@@ -11,7 +12,6 @@ public class Enemy_GoToArea : MonoBehaviour
 
     void Update()
     {
-  
         if (!reachedArea)
         {
             MoverAte(targetArea.position);
@@ -20,14 +20,16 @@ public class Enemy_GoToArea : MonoBehaviour
             if (distArea <= 0.3f)
             {
                 reachedArea = true;
+                Debug.Log("Inimigo chegou na área!");
             }
         }
 
-      
+       
         float distPlayer = Vector3.Distance(transform.position, player.position);
         if (distPlayer <= triggerDistance)
         {
-            AtivarContatoComJogador();
+            CarregarCenaDeJumpScare();
+            Time.timeScale = 0;
         }
     }
 
@@ -38,18 +40,11 @@ public class Enemy_GoToArea : MonoBehaviour
             destino,
             moveSpeed * Time.deltaTime
         );
-
-        Vector3 direcao = destino - transform.position;
-        if (direcao != Vector3.zero)
-        {
-            Quaternion rot = Quaternion.LookRotation(direcao);
-            transform.rotation = Quaternion.Slerp(transform.rotation, rot, 10f * Time.deltaTime);
-        }
     }
 
-    void AtivarContatoComJogador()
+    void CarregarCenaDeJumpScare()
     {
-        Debug.Log("O inimigo encostou no jogador!");
-        // Aqui você coloca o jumpscare futuramente
+        SceneManager.LoadScene("JumpScary");
+        Time.timeScale = 1;
     }
 }
