@@ -11,6 +11,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/JumpScary.unity
+    guid: c4d21c34c099e0a4ea9a16e953efe67e
+  - enabled: 1
+    path: Assets/Scenes/Gustavo.unity
+    guid: dd70176a9fde91441a7c32c51c33aaf8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
