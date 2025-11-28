@@ -9,7 +9,7 @@ public class Quests : MonoBehaviour
     public int indexQuest = 0;
     void Start()
     {       
-       queststxt = new string[5];
+       queststxt = new string[8];
        queststxt[0] = "Encontrar lanterna";
        queststxt[1] = "Voltar para a vila";
        queststxt[2] = "Volte o mais rápido possível para a vila!";
