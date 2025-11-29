@@ -29,7 +29,6 @@ public class InimigoSegueArea : MonoBehaviour
         if (distPlayer <= triggerDistance)
         {
             CarregarCenaDeJumpScare();
-            Time.timeScale = 0;
         }
     }
 
@@ -45,6 +44,6 @@ public class InimigoSegueArea : MonoBehaviour
     void CarregarCenaDeJumpScare()
     {
         SceneManager.LoadScene("JumpScary");
-        Time.timeScale = 1;
+        
     }
 }

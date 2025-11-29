@@ -6,6 +6,6 @@ public class ReiniciarFase : MonoBehaviour
     public void ReiniciarGameplay()
     {
         
-        SceneManager.LoadScene("Game");
+        SceneManager.LoadScene("Gustavo");
     }
 }   
