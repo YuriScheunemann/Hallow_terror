@@ -1,13 +1,16 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameOver_1perseguicao : MonoBehaviour
-{    
-    void Start()
+{
+   
+    private void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("JumpScary");
+        }
         
-    }
-    void Update()
-    {
-        
+
     }
 }

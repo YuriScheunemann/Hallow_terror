@@ -2,14 +2,13 @@ using UnityEngine;
 
 public class Teleport : MonoBehaviour
 {
-    void Start()
+    public Transform Teleport_caveOut;
+    public GameObject Player;
+    private void OnTriggerEnter(Collider other)
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Player.transform.position = Teleport_caveOut.transform.position;
+        }
     }
 }
