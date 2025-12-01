@@ -4,21 +4,21 @@ public class AutoCreditsScroll : MonoBehaviour
 {
     public RectTransform credits;
     public float autoScrollSpeed = 50f;
-    public float scrollBoost = 100f;
+    public float scrollBoost = 200f;
 
-    private float minY;
-    private float maxY;
+    float minY;
+    float maxY;
 
     void Start()
     {
         RectTransform panel = credits.parent.GetComponent<RectTransform>();
+        float contentHeight = credits.rect.height;
+        float panelHeight = panel.rect.height;
 
         maxY = 0f;
-        minY = Mathf.Min(panel.rect.height - credits.rect.height, 0f);
+        minY = panelHeight - contentHeight;
 
-        Vector2 startPos = credits.anchoredPosition;
-        startPos.y = minY;
-        credits.anchoredPosition = startPos;
+        credits.anchoredPosition = new Vector2(0, minY);
     }
 
     void Update()
