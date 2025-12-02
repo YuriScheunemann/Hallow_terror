@@ -1331,6 +1331,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1396743801}
     m_Modifications:
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.07912566
+      objectReference: {fileID: 0}
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.20101054
+      objectReference: {fileID: 0}
     - target: {fileID: 2434621873905881255, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
       propertyPath: m_Name
       value: Villager_infectado (4)
@@ -2323,6 +2331,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1396743801}
     m_Modifications:
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.07912566
+      objectReference: {fileID: 0}
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.20101054
+      objectReference: {fileID: 0}
     - target: {fileID: 2434621873905881255, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
       propertyPath: m_Name
       value: Villager_infectado (7)
@@ -14872,7 +14888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 638818318}
   - component: {fileID: 638818320}
-  - component: {fileID: 638818319}
+  - component: {fileID: 638818321}
   m_Layer: 0
   m_Name: Need_caveActivator
   m_TagString: Untagged
@@ -14895,7 +14911,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2141243821}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &638818319
+--- !u!65 &638818320
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638818317}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 12.737971, z: 104.48486}
+  m_Center: {x: 0, y: 5.8689866, z: -13.889526}
+--- !u!114 &638818321
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14904,9 +14941,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 638818317}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce9362e6879ccef408456c384b7cab68, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ab3bb3392b7eb5489a93fd9efd3a953, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CutsceneStart
+  m_EditorClassIdentifier: Assembly-CSharp::CutsceneNoCount
   UnityEvent:
     m_PersistentCalls:
       m_Calls:
@@ -14934,28 +14971,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  Quests: {fileID: 0}
---- !u!65 &638818320
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638818317}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 12.737971, z: 104.48486}
-  m_Center: {x: 0, y: 5.8689866, z: -13.889526}
 --- !u!1001 &640328482
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24148,6 +24163,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1396743801}
     m_Modifications:
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.07912566
+      objectReference: {fileID: 0}
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.20101054
+      objectReference: {fileID: 0}
     - target: {fileID: 2434621873905881255, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
       propertyPath: m_Name
       value: Villager_infectado (1)
@@ -32898,6 +32921,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1396743801}
     m_Modifications:
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.07912566
+      objectReference: {fileID: 0}
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.20101054
+      objectReference: {fileID: 0}
     - target: {fileID: 2434621873905881255, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
       propertyPath: m_Name
       value: Villager_infectado (9)
@@ -37924,6 +37955,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1396743801}
     m_Modifications:
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.07912566
+      objectReference: {fileID: 0}
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.20101054
+      objectReference: {fileID: 0}
     - target: {fileID: 2434621873905881255, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
       propertyPath: m_Name
       value: Villager_infectado
@@ -39296,6 +39335,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1396743801}
     m_Modifications:
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.07912566
+      objectReference: {fileID: 0}
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.20101054
+      objectReference: {fileID: 0}
     - target: {fileID: 2434621873905881255, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
       propertyPath: m_Name
       value: Villager_infectado (16)
@@ -40147,6 +40194,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1396743801}
     m_Modifications:
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.07912566
+      objectReference: {fileID: 0}
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.20101054
+      objectReference: {fileID: 0}
     - target: {fileID: 2434621873905881255, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
       propertyPath: m_Name
       value: Villager_infectado (8)
@@ -41894,6 +41949,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1396743801}
     m_Modifications:
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.07912566
+      objectReference: {fileID: 0}
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.20101054
+      objectReference: {fileID: 0}
     - target: {fileID: 2434621873905881255, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
       propertyPath: m_Name
       value: Villager_infectado (14)
@@ -43713,6 +43776,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1396743801}
     m_Modifications:
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.07912566
+      objectReference: {fileID: 0}
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.20101054
+      objectReference: {fileID: 0}
     - target: {fileID: 2434621873905881255, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
       propertyPath: m_Name
       value: Villager_infectado (10)
@@ -44581,6 +44652,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1396743801}
     m_Modifications:
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.07912566
+      objectReference: {fileID: 0}
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.20101054
+      objectReference: {fileID: 0}
     - target: {fileID: 2434621873905881255, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
       propertyPath: m_Name
       value: Villager_infectado (12)
@@ -47349,6 +47428,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1396743801}
     m_Modifications:
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.07912566
+      objectReference: {fileID: 0}
+    - target: {fileID: 668374065945701907, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.20101054
+      objectReference: {fileID: 0}
     - target: {fileID: 2434621873905881255, guid: 97edc2a75a6637b47979a7df2d3bd867, type: 3}
       propertyPath: m_Name
       value: Villager_infectado (2)
@@ -48040,7 +48127,7 @@ MonoBehaviour:
   UnityEvent:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1340325579}
+      - m_Target: {fileID: 539962804}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -53417,6 +53504,38 @@ PrefabInstance:
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 452827898818431061, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 63.148
+      objectReference: {fileID: 0}
+    - target: {fileID: 452827898818431061, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.441
+      objectReference: {fileID: 0}
+    - target: {fileID: 452827898818431061, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 53.742
+      objectReference: {fileID: 0}
+    - target: {fileID: 452827898818431061, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9228681
+      objectReference: {fileID: 0}
+    - target: {fileID: 452827898818431061, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.014517603
+      objectReference: {fileID: 0}
+    - target: {fileID: 452827898818431061, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.38479513
+      objectReference: {fileID: 0}
+    - target: {fileID: 452827898818431061, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0.0060531977
+      objectReference: {fileID: 0}
+    - target: {fileID: 452827898818431061, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -1.802
+      objectReference: {fileID: 0}
     - target: {fileID: 468732840306801599, guid: 48860477b92975543a92b920e3b01d42, type: 3}
       propertyPath: m_LocalPosition.y
       value: 8.325
@@ -53424,6 +53543,46 @@ PrefabInstance:
     - target: {fileID: 1453182486829979546, guid: 48860477b92975543a92b920e3b01d42, type: 3}
       propertyPath: m_LocalPosition.y
       value: 8.387
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935236396175583228, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 78.71
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935236396175583228, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.494
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935236396175583228, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 41.367
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935236396175583228, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9228346
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935236396175583228, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.009260901
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935236396175583228, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.3844843
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935236396175583228, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.021501837
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935236396175583228, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 1.927
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935236396175583228, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -45.205
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935236396175583228, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 1.867
       objectReference: {fileID: 0}
     - target: {fileID: 2033881059123903170, guid: 48860477b92975543a92b920e3b01d42, type: 3}
       propertyPath: m_LocalRotation.w
