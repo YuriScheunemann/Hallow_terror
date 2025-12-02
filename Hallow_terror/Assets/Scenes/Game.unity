@@ -50239,8 +50239,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lanterna
   lanternaLight: {fileID: 2780479712248967947}
-  toggleOnClip: {fileID: 0}
-  toggleOffClip: {fileID: 0}
+  toggleOnClip: {fileID: 8300000, guid: 61702b11c0f45c04b894a5c55348d2e9, type: 3}
+  toggleOffClip: {fileID: 8300000, guid: 61702b11c0f45c04b894a5c55348d2e9, type: 3}
   volume: 1
   toggleKey: 102
 --- !u!1 &490273711304501364
@@ -54486,6 +54486,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Movimentacao
   moveSpeed: 12.5
   rotationSpeed: 100
+  AudioWalk: {fileID: 8300000, guid: fbf2596161a995c46b246ddf768390f8, type: 3}
 --- !u!1 &8165343855508124197
 GameObject:
   m_ObjectHideFlags: 0

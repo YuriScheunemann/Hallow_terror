@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 1de459fc71b1e9b43b362d70fcbb6c75
+guid: 61702b11c0f45c04b894a5c55348d2e9
 AudioImporter:
   externalObjects: {}
-  serializedVersion: 8
+  serializedVersion: 7
   defaultSettings:
     serializedVersion: 2
     loadType: 0
@@ -21,3 +21,10 @@ AudioImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273565
+  packageName: CLICK SFX PACK HOVE AUDIO
+  packageVersion: 1.0
+  assetPath: Assets/LanternSounds/Click_SFX_Pack/Fightstick/Fightstick_Click_5.wav
+  uploadId: 635726

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Audio;
 
 [RequireComponent(typeof(Rigidbody))]
 [RequireComponent(typeof(Animator))]
@@ -6,14 +7,16 @@ public class Movimentacao : MonoBehaviour
 {
     public float moveSpeed = 5f;
     public float rotationSpeed = 100f;
-
+    public AudioClip AudioWalk;
+    AudioSource AudioSource;
     private Rigidbody rb;
    
     private float horizontalInput;
     private float verticalInput;
     void Start()
     {
-        rb = GetComponent<Rigidbody>();       
+        rb = GetComponent<Rigidbody>();
+        AudioSource = gameObject.AddComponent<AudioSource>();
         rb.freezeRotation = true;
     }
 
@@ -31,8 +34,23 @@ public class Movimentacao : MonoBehaviour
     void Move()
     {
         Vector3 moveDirection = transform.forward * verticalInput * moveSpeed;
-        rb.linearVelocity = new Vector3(moveDirection.x, rb.linearVelocity.y, moveDirection.z);        
-      
+        rb.linearVelocity = new Vector3(moveDirection.x, rb.linearVelocity.y, moveDirection.z);
+        if (moveDirection.magnitude > 0)
+        {
+            if (!AudioSource.isPlaying) // Só toca o áudio se não estiver tocando
+            {
+                AudioSource.clip = AudioWalk;
+                AudioSource.Play();
+                AudioSource.volume = 80;
+            }
+        }
+        else
+        {
+            if (AudioSource.isPlaying) // Para o áudio se não estiver se movendo
+            {
+                AudioSource.Stop();
+            }
+        }
     }
     void Rotate()
     {
@@ -40,6 +58,8 @@ public class Movimentacao : MonoBehaviour
         float rotation = horizontalInput * rotationSpeed * Time.fixedDeltaTime;
         transform.Rotate(0, rotation, 0);
     }
+
+
 
 
 

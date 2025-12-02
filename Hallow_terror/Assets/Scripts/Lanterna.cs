@@ -8,7 +8,7 @@ public class Lanterna : MonoBehaviour
     public AudioClip toggleOnClip;   
     public AudioClip toggleOffClip; 
     [Range(0f, 1f)]
-    public float volume = 1f;
+    public float volume = 100f;
     public KeyCode toggleKey = KeyCode.F;
 
     void Start()
