@@ -13,6 +13,10 @@ PrefabInstance:
       value: Arvore (1)
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: fda5f0fbb824fb847a8635f96d681d0a, type: 3}
+      propertyPath: m_TagString
+      value: Tree
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: fda5f0fbb824fb847a8635f96d681d0a, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 2147483647
       objectReference: {fileID: 0}
