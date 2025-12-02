@@ -6726,8 +6726,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 201326591
+  m_fontColor: {r: 1, g: 1, b: 1, a: 0}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11615,7 +11615,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &539962805
 Transform:
   m_ObjectHideFlags: 0
@@ -11652,6 +11652,18 @@ PlayableDirector:
     value: {fileID: 2021835491}
   - key: {fileID: -2179955181220020243, guid: b2fd17b228f67544babe353e3b064490, type: 2}
     value: {fileID: 1465754846401555562}
+  - key: {fileID: 305962411493661371, guid: b2fd17b228f67544babe353e3b064490, type: 2}
+    value: {fileID: 1681605145}
+  - key: {fileID: -8288018020460500921, guid: b2fd17b228f67544babe353e3b064490, type: 2}
+    value: {fileID: 405205209}
+  - key: {fileID: -1202170471627125575, guid: b2fd17b228f67544babe353e3b064490, type: 2}
+    value: {fileID: 237037135}
+  - key: {fileID: -703827919030002064, guid: b2fd17b228f67544babe353e3b064490, type: 2}
+    value: {fileID: 1459212491}
+  - key: {fileID: 2891474371186357816, guid: b2fd17b228f67544babe353e3b064490, type: 2}
+    value: {fileID: 321673920}
+  - key: {fileID: 5572532127192466582, guid: b2fd17b228f67544babe353e3b064490, type: 2}
+    value: {fileID: 4829571898771233057}
   m_ExposedReferences:
     m_References: []
 --- !u!1001 &553834482
@@ -17909,7 +17921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.RawImage
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -49390,7 +49402,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
+    rgba: 16777215
   m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
