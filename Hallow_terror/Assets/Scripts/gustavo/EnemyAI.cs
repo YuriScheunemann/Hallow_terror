@@ -4,10 +4,17 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class EnemyAI : MonoBehaviour
 {
-    [Header("Patrulha Aleatória")]
-    public float patrolRadius = 8f;           // raio em torno da posição inicial para escolher pontos aleatórios
+    [Header("Patrulha (Waypoints)")]
+    [Tooltip("Se preencher com Transforms, o inimigo vai patrulhar entre esses objetos em ordem.")]
+    public Transform[] patrolPoints;
+    public bool loopPatrol = true;             // quando chegar no último, volta ao primeiro (se false, fica parado)
+    public float arrivalDistance = 0.4f;       // distância para considerar que chegou no waypoint
+
+    [Header("Patrulha Aleatória (fallback)")]
+    public float patrolRadius = 8f;           // usado somente se patrolPoints estiver vazio
     public float patrolSpeed = 2f;            // velocidade ao patrulhar
-    public float timeBetweenPoints = 0.5f;    // tempo mínimo antes de escolher novo ponto (para evitar trocas instantâneas)
+    [Tooltip("Tempo que espera ao chegar em um ponto antes de seguir para o próximo")]
+    public float timeBetweenPoints = 0.5f;    // tempo mínimo antes de escolher novo ponto (ou seguir para próximo waypoint)
 
     [Header("Perseguição")]
     public float chaseSpeed = 4.5f;
@@ -34,6 +41,9 @@ public class EnemyAI : MonoBehaviour
     bool hasTarget = false;
     float chooseTimer = 0f;
 
+    // Waypoint state
+    int currentPatrolIndex = 0;
+
     enum State { Patrol, Chasing }
     State state = State.Patrol;
 
@@ -47,14 +57,25 @@ public class EnemyAI : MonoBehaviour
         audioSource.spatialBlend = 1f;
 
         startPos = transform.position;
-        PickNewPatrolPointImmediate();
+
+        // se houver waypoints, começa no primeiro; senão, usa patrulha aleatória
+        if (patrolPoints != null && patrolPoints.Length > 0)
+        {
+            currentPatrolIndex = 0;
+            currentPatrolTarget = GetWaypointPosition(currentPatrolIndex);
+            hasTarget = true;
+        }
+        else
+        {
+            PickNewPatrolPointImmediate();
+        }
 
         if (player == null)
-            Debug.LogWarning("EnemyAI_RandomPatrol: arraste o Transform do player no campo 'player' no Inspector.");
+            Debug.LogWarning("EnemyAI: arraste o Transform do player no campo 'player' no Inspector.");
         if (controller == null)
-            Debug.LogWarning("EnemyAI_RandomPatrol: CharacterController não encontrado no GameObject.");
+            Debug.LogWarning("EnemyAI: CharacterController não encontrado no GameObject.");
         if (footstepClip == null)
-            Debug.LogWarning("EnemyAI_RandomPatrol: adicione um AudioClip em 'footstepClip' para os passos.");
+            Debug.LogWarning("EnemyAI: adicione um AudioClip em 'footstepClip' para os passos.");
     }
 
     void Update()
@@ -77,13 +98,15 @@ public class EnemyAI : MonoBehaviour
     {
         chooseTimer += Time.deltaTime;
 
-        // se não tem alvo (ou alcançou), escolher um novo ponto
+        Vector3 targetPos = GetCurrentPatrolTarget();
+
+        // se não tem alvo (ou alcançou), escolher/avançar para o próximo ponto
         if (!hasTarget || Vector3.Distance(new Vector3(transform.position.x, 0, transform.position.z),
-                                           new Vector3(currentPatrolTarget.x, 0, currentPatrolTarget.z)) < 0.4f)
+                                           new Vector3(targetPos.x, 0, targetPos.z)) < arrivalDistance)
         {
             if (chooseTimer >= timeBetweenPoints)
             {
-                PickNewPatrolPoint();
+                AdvancePatrolTarget();
                 chooseTimer = 0f;
             }
             else
@@ -94,7 +117,7 @@ public class EnemyAI : MonoBehaviour
             }
         }
 
-        MoveTowards(currentPatrolTarget, patrolSpeed);
+        MoveTowards(targetPos, patrolSpeed);
     }
 
     void ChaseUpdate()
@@ -120,6 +143,57 @@ public class EnemyAI : MonoBehaviour
         transform.rotation = Quaternion.Slerp(transform.rotation, look, Time.deltaTime * 6f);
 
         controller.SimpleMove(moveDir * speed);
+    }
+
+    // --- Waypoint / Patrol helpers ---
+
+    Vector3 GetCurrentPatrolTarget()
+    {
+        if (patrolPoints != null && patrolPoints.Length > 0)
+        {
+            // sempre pega a posição atual do waypoint (caso ele se mova)
+            return GetWaypointPosition(currentPatrolIndex);
+        }
+        else
+        {
+            return currentPatrolTarget;
+        }
+    }
+
+    Vector3 GetWaypointPosition(int index)
+    {
+        if (patrolPoints == null || patrolPoints.Length == 0) return currentPatrolTarget;
+        if (index < 0 || index >= patrolPoints.Length) return currentPatrolTarget;
+        return patrolPoints[index].position;
+    }
+
+    void AdvancePatrolTarget()
+    {
+        if (patrolPoints != null && patrolPoints.Length > 0)
+        {
+            // avança para o próximo waypoint
+            currentPatrolIndex++;
+            if (currentPatrolIndex >= patrolPoints.Length)
+            {
+                if (loopPatrol)
+                    currentPatrolIndex = 0;
+                else
+                {
+                    // ficar no último waypoint
+                    currentPatrolIndex = patrolPoints.Length - 1;
+                    hasTarget = true;
+                    currentPatrolTarget = GetWaypointPosition(currentPatrolIndex);
+                    return;
+                }
+            }
+            currentPatrolTarget = GetWaypointPosition(currentPatrolIndex);
+            hasTarget = true;
+        }
+        else
+        {
+            // fallback: escolhe novo ponto aleatório
+            PickNewPatrolPoint();
+        }
     }
 
     void PickNewPatrolPointImmediate()
@@ -213,9 +287,31 @@ public class EnemyAI : MonoBehaviour
         Gizmos.DrawLine(eyePos, eyePos + leftDir * detectionRange);
         Gizmos.DrawLine(eyePos, eyePos + rightDir * detectionRange);
 
-        // alvo atual de patrulha
-        if (hasTarget)
+        // waypoint visuals (se houver)
+        if (patrolPoints != null && patrolPoints.Length > 0)
         {
+            Gizmos.color = Color.magenta;
+            for (int i = 0; i < patrolPoints.Length; i++)
+            {
+                if (patrolPoints[i] == null) continue;
+                Gizmos.DrawSphere(patrolPoints[i].position, 0.15f);
+            }
+
+            // linhas entre waypoints
+            Gizmos.color = Color.white;
+            for (int i = 0; i < patrolPoints.Length - 1; i++)
+            {
+                if (patrolPoints[i] == null || patrolPoints[i + 1] == null) continue;
+                Gizmos.DrawLine(patrolPoints[i].position, patrolPoints[i + 1].position);
+            }
+            if (loopPatrol && patrolPoints.Length > 1 && patrolPoints[0] != null && patrolPoints[patrolPoints.Length - 1] != null)
+            {
+                Gizmos.DrawLine(patrolPoints[patrolPoints.Length - 1].position, patrolPoints[0].position);
+            }
+        }
+        else if (hasTarget)
+        {
+            // alvo atual de patrulha (fallback aleatório)
             Gizmos.color = Color.magenta;
             Gizmos.DrawSphere(currentPatrolTarget, 0.15f);
         }
