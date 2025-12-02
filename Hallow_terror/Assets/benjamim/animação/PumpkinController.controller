@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1102 &-9164311007246664683
+--- !u!1102 &-6043145614985338059
 AnimatorState:
   serializedVersion: 6
   m_ObjectHideFlags: 1
@@ -74,32 +74,6 @@ AnimatorState:
   m_MirrorParameter: 
   m_CycleOffsetParameter: 
   m_TimeParameter: 
---- !u!1102 &721670606099741818
-AnimatorState:
-  serializedVersion: 6
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Armature_001|mordida
-  m_Speed: 1
-  m_CycleOffset: 0
-  m_Transitions: []
-  m_StateMachineBehaviours: []
-  m_Position: {x: 50, y: 50, z: 0}
-  m_IKOnFeet: 0
-  m_WriteDefaultValues: 1
-  m_Mirror: 0
-  m_SpeedParameterActive: 0
-  m_MirrorParameterActive: 0
-  m_CycleOffsetParameterActive: 0
-  m_TimeParameterActive: 0
-  m_Motion: {fileID: 1593558213100210149, guid: 2069cab2e6c7eb0449e99e9b376c7cbd, type: 3}
-  m_Tag: 
-  m_SpeedParameter: 
-  m_MirrorParameter: 
-  m_CycleOffsetParameter: 
-  m_TimeParameter: 
 --- !u!1107 &5715321653700954586
 AnimatorStateMachine:
   serializedVersion: 6
@@ -113,14 +87,14 @@ AnimatorStateMachine:
     m_State: {fileID: 8016513934505062359}
     m_Position: {x: 430, y: 340, z: 0}
   - serializedVersion: 1
-    m_State: {fileID: 721670606099741818}
-    m_Position: {x: 430, y: 220, z: 0}
-  - serializedVersion: 1
-    m_State: {fileID: -9164311007246664683}
-    m_Position: {x: 430, y: 90, z: 0}
-  - serializedVersion: 1
     m_State: {fileID: 721394541387543}
     m_Position: {x: 50, y: 330, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: 8292852198835985044}
+    m_Position: {x: 582, y: 100.5, z: 0}
+  - serializedVersion: 1
+    m_State: {fileID: -6043145614985338059}
+    m_Position: {x: 440, y: 30, z: 0}
   m_ChildStateMachines: []
   m_AnyStateTransitions: []
   m_EntryTransitions: []
@@ -130,7 +104,7 @@ AnimatorStateMachine:
   m_EntryPosition: {x: 50, y: 120, z: 0}
   m_ExitPosition: {x: 800, y: 120, z: 0}
   m_ParentStateMachinePosition: {x: 800, y: 20, z: 0}
-  m_DefaultState: {fileID: 721394541387543}
+  m_DefaultState: {fileID: -6043145614985338059}
 --- !u!1102 &8016513934505062359
 AnimatorState:
   serializedVersion: 6
@@ -152,6 +126,32 @@ AnimatorState:
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
   m_Motion: {fileID: 7707328290458076452, guid: 2069cab2e6c7eb0449e99e9b376c7cbd, type: 3}
+  m_Tag: 
+  m_SpeedParameter: 
+  m_MirrorParameter: 
+  m_CycleOffsetParameter: 
+  m_TimeParameter: 
+--- !u!1102 &8292852198835985044
+AnimatorState:
+  serializedVersion: 6
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Armature_001|mordida
+  m_Speed: 1
+  m_CycleOffset: 0
+  m_Transitions: []
+  m_StateMachineBehaviours: []
+  m_Position: {x: 50, y: 50, z: 0}
+  m_IKOnFeet: 0
+  m_WriteDefaultValues: 1
+  m_Mirror: 0
+  m_SpeedParameterActive: 0
+  m_MirrorParameterActive: 0
+  m_CycleOffsetParameterActive: 0
+  m_TimeParameterActive: 0
+  m_Motion: {fileID: 1593558213100210149, guid: 2069cab2e6c7eb0449e99e9b376c7cbd, type: 3}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
