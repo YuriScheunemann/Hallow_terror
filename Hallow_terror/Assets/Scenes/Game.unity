@@ -6155,7 +6155,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3229074442046746193, guid: c8c6496b92d63d94cba3f1b7d0222447, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6252,9 +6252,9 @@ MonoBehaviour:
   patrolRadius: 100
   patrolSpeed: 50
   timeBetweenPoints: 0.5
-  chaseSpeed: 4.5
-  detectionRange: 80
-  detectionAngle: 30
+  chaseSpeed: 11.5
+  detectionRange: 125
+  detectionAngle: 28.8
   footstepClip: {fileID: 0}
   baseStepInterval: 0.45
   minSpeedForSteps: 0.1
