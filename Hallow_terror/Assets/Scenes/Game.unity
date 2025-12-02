@@ -134,7 +134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1622232
 Transform:
   m_ObjectHideFlags: 0
@@ -49660,7 +49660,7 @@ PrefabInstance:
       objectReference: {fileID: 531528233047612437}
     - target: {fileID: 399700777828603260, guid: 48860477b92975543a92b920e3b01d42, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 399700777828603260, guid: 48860477b92975543a92b920e3b01d42, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -49685,7 +49685,7 @@ PrefabInstance:
     - target: {fileID: 399700777828603260, guid: 48860477b92975543a92b920e3b01d42, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1656997502}
+      objectReference: {fileID: 1698792122}
     - target: {fileID: 399700777828603260, guid: 48860477b92975543a92b920e3b01d42, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
