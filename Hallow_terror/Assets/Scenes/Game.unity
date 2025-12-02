@@ -134,7 +134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1622232
 Transform:
   m_ObjectHideFlags: 0
@@ -12040,8 +12040,6 @@ PlayableDirector:
     value: {fileID: 1459212491}
   - key: {fileID: 2891474371186357816, guid: b2fd17b228f67544babe353e3b064490, type: 2}
     value: {fileID: 321673920}
-  - key: {fileID: 5572532127192466582, guid: b2fd17b228f67544babe353e3b064490, type: 2}
-    value: {fileID: 4829571898771233057}
   - key: {fileID: -629989679598872269, guid: b2fd17b228f67544babe353e3b064490, type: 2}
     value: {fileID: 1360258355}
   - key: {fileID: 3579576317857225831, guid: b2fd17b228f67544babe353e3b064490, type: 2}
@@ -15546,8 +15544,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 687.4616, y: 2.7502909, z: 179.31029}
-  m_Center: {x: 44.679657, y: -0.8750398, z: 12.979092}
+  m_Size: {x: 687.4616, y: 2.7502909, z: 948.9158}
+  m_Center: {x: 44.679657, y: -0.8750352, z: 397.78058}
 --- !u!1001 &737530719
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27289,6 +27287,7 @@ Transform:
   - {fileID: 1340325580}
   - {fileID: 539962805}
   - {fileID: 1886402980}
+  - {fileID: 1536997561}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1257979865
@@ -31096,7 +31095,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1396743801
 Transform:
   m_ObjectHideFlags: 0
@@ -33313,6 +33312,57 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: fda5f0fbb824fb847a8635f96d681d0a, type: 3}
+--- !u!1 &1536997560
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1536997561}
+  - component: {fileID: 1536997562}
+  m_Layer: 0
+  m_Name: Angulo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &1536997561
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536997560}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1254048641}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!320 &1536997562
+PlayableDirector:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1536997560}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_PlayableAsset: {fileID: 11400000, guid: f9a405af10f28e641af3ab950d68aed7, type: 2}
+  m_InitialState: 1
+  m_WrapMode: 2
+  m_DirectorUpdateMode: 1
+  m_InitialTime: 0
+  m_SceneBindings:
+  - key: {fileID: 5474708394028828846, guid: f9a405af10f28e641af3ab950d68aed7, type: 2}
+    value: {fileID: 4829571898771233057}
+  m_ExposedReferences:
+    m_References: []
 --- !u!1001 &1538250456
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50892,8 +50942,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 531528233047612437}
     - target: {fileID: 399700777828603260, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: angulo
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 399700777828603260, guid: 48860477b92975543a92b920e3b01d42, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 5663741279361757191}
+    - target: {fileID: 399700777828603260, guid: 48860477b92975543a92b920e3b01d42, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 399700777828603260, guid: 48860477b92975543a92b920e3b01d42, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
@@ -50922,7 +50980,7 @@ PrefabInstance:
     - target: {fileID: 399700777828603260, guid: 48860477b92975543a92b920e3b01d42, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 1204217000}
+      objectReference: {fileID: 1536997560}
     - target: {fileID: 399700777828603260, guid: 48860477b92975543a92b920e3b01d42, type: 3}
       propertyPath: UnityEvent.m_PersistentCalls.m_Calls.Array.data[3].m_Target
       value: 
