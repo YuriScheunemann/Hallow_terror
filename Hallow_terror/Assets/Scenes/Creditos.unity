@@ -280,7 +280,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 713, y: -69.683}
+  m_AnchoredPosition: {x: 607.4, y: -121.09999}
   m_SizeDelta: {x: 348.258, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &158014544
@@ -416,7 +416,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1095, y: -207}
+  m_AnchoredPosition: {x: 995, y: -270.5}
   m_SizeDelta: {x: 348.258, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &201690076
@@ -439,7 +439,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: https://mixkit.co/free-sound-effects/footsteps/?utm_source=chatgpt.com
+  m_text: 'Passos: https://mixkit.co/free-sound-effects/footsteps/?utm_source=chatgpt.com'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -800,7 +800,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1226, y: -138.73}
+  m_AnchoredPosition: {x: 1074.8, y: -210.9}
   m_SizeDelta: {x: 370.55, y: 154.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &640301716
@@ -823,8 +823,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Explos\xE3o: https://sketchfab.com/3d-models/atomica-blast-2dbe71752ed64bb89a2bc1f22096886d\r\nDialogo:
-    https://freesound.org/people/InspectorJ/sounds/414070/\r\n\n"
+  m_text: "Explos\xE3o: https://sketchfab.com/3d-models/atomica-blast-2dbe71752ed64bb89a2bc1f22096886d\r\nDialogo:https://freesound.org/people/InspectorJ/sounds/414070/\r\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -937,8 +936,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 427, y: 127}
-  m_SizeDelta: {x: 129.11, y: 50}
+  m_AnchoredPosition: {x: 250.6, y: 135.9}
+  m_SizeDelta: {x: 73.835, y: 28.031}
   m_Pivot: {x: 0.26088646, y: 0.5987907}
 --- !u!114 &738085478
 MonoBehaviour:
@@ -1027,7 +1026,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 60.509018, w: 0}
+  m_margin: {x: 0, y: 0, z: 0.8230858, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -1075,7 +1074,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1231, y: 15}
+  m_AnchoredPosition: {x: -1317, y: 16}
   m_SizeDelta: {x: 370.55, y: 154.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &738253258
@@ -1217,7 +1216,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -180, y: 111}
+  m_AnchoredPosition: {x: -346.6, y: 118.26999}
   m_SizeDelta: {x: 159.476, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &761449357
@@ -1353,7 +1352,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1404, y: -32.587}
+  m_AnchoredPosition: {x: 1058.9, y: -92.73001}
   m_SizeDelta: {x: 370.55, y: 154.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &799422130
@@ -1895,8 +1894,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1002, y: 0}
-  m_SizeDelta: {x: 348.258, y: 50}
+  m_AnchoredPosition: {x: 611, y: 46.3}
+  m_SizeDelta: {x: 348.258, y: 223.34}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1323357723
 MonoBehaviour:
@@ -1918,7 +1917,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'THEME:
+  m_text: 'THEME:https://assetstore.unity.com/packages/audio/music/electronic/dark-atmospheric-free-track-music-pack-adaptive-tracks-244634
+
+    THEME2:https://assetstore.unity.com/packages/audio/ambient/horror-atmosphere-lite-227561
+
+    THEME3:
+    https://assetstore.unity.com/packages/audio/music/free-survival-horror-game-music-247477
 
 '
   m_isRightToLeft: 0
@@ -2033,7 +2037,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 145, y: 128.54}
+  m_AnchoredPosition: {x: -37.8, y: 127.67}
   m_SizeDelta: {x: 150.214, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1357795864
@@ -2169,7 +2173,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 812, y: -119.68001}
+  m_AnchoredPosition: {x: 613.4, y: -165.2}
   m_SizeDelta: {x: 348.258, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1359522551
@@ -2384,7 +2388,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 713, y: -169.68001}
+  m_AnchoredPosition: {x: 611, y: -210.9}
   m_SizeDelta: {x: 348.258, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1409182337
@@ -2520,7 +2524,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 736, y: -219.68}
+  m_AnchoredPosition: {x: 611, y: -254.10002}
   m_SizeDelta: {x: 348.258, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1458947431
@@ -2543,7 +2547,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ttps://assetstore.unity.com/packages/audio/sound-fx/click-sfx-pack-hove-audio-273565
+  m_text: 'CLICK: ttps://assetstore.unity.com/packages/audio/sound-fx/click-sfx-pack-hove-audio-273565'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2710,7 +2714,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1263, y: -196}
+  m_AnchoredPosition: {x: -1349.0001, y: -195}
   m_SizeDelta: {x: 370.55, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1653326314
@@ -2847,7 +2851,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1256.5, y: -77.270004}
+  m_AnchoredPosition: {x: -1342.5001, y: -76.270004}
   m_SizeDelta: {x: 370.55, y: 154.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1676017950
@@ -2991,7 +2995,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -607.00305, y: 330}
+  m_AnchoredPosition: {x: -688, y: 330}
   m_SizeDelta: {x: 370.55, y: 154.54}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1752005187
@@ -3211,7 +3215,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1076, y: 84.86}
+  m_AnchoredPosition: {x: 1013.4, y: 39.9}
   m_SizeDelta: {x: 348.258, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1852694570
@@ -3385,8 +3389,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -51.442, y: 8.2226}
-  m_SizeDelta: {x: 3084.436, y: 449.85}
+  m_AnchoredPosition: {x: 121.168, y: 8.2226}
+  m_SizeDelta: {x: 3429.655, y: 449.85}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1951887605
 MonoBehaviour:
@@ -3474,7 +3478,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1263, y: 126.67006}
+  m_AnchoredPosition: {x: -1349.0001, y: 127.67006}
   m_SizeDelta: {x: 357.565, y: 68.806}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1999419288
@@ -3705,7 +3709,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2057744402}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3713,7 +3717,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 722.63, y: 78.54}
+  m_AnchoredPosition: {x: 1007.4, y: 127.67}
   m_SizeDelta: {x: 348.258, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2057744404
@@ -3736,7 +3740,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: SONS:https://assetstore.unity.com/packages/audio/sound-fx/scary-sound-fx-21523
+  m_text: 'SONS:https://assetstore.unity.com/packages/audio/sound-fx/scary-sound-fx-21523
+
+    SOUNDS2:https://opengameart.org/content/random-sounds-samples'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
