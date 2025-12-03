@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class Jumpscare : MonoBehaviour
 {
-  
-
     public AudioClip Sound1;
     private AudioSource audioSound1;
 

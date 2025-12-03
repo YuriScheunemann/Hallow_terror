@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4963183425706989858
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2636451132234020079}
+  - component: {fileID: 6266199892466374255}
+  m_Layer: 0
+  m_Name: Villagers_JumpscareSounds
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2636451132234020079
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4963183425706989858}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.9339, y: 1.86005, z: 70.86839}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6266199892466374255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4963183425706989858}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b95a1a94d0927d2498dd6893011b3eb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Jumpscare_Villagers
+  Espancamento:
+  - {fileID: 8300000, guid: e48716aabb1809b479e9ce651e29dd49, type: 3}
+  - {fileID: 8300000, guid: 3f7408e2a49cf92469b07856342da972, type: 3}
+  - {fileID: 8300000, guid: 9cd381f6ac8bc6e48b60e5fb74e8adbc, type: 3}
+  - {fileID: 8300000, guid: aebc02ecdac866f4b92510f87779a97b, type: 3}
+  - {fileID: 8300000, guid: 2a37e334260715d4c99e1add3ddc605a, type: 3}
+  - {fileID: 8300000, guid: ae163c9992349f9458af2c258c9c5fe9, type: 3}
+  - {fileID: 8300000, guid: 634c33d2bada7e047820d24af7f40504, type: 3}
+  - {fileID: 8300000, guid: f378b482777ed1141b2183bc93a2ffc0, type: 3}
+  - {fileID: 8300000, guid: a5480a1ddb02e2249b871b9e74cc48fd, type: 3}
+  - {fileID: 8300000, guid: 9cd381f6ac8bc6e48b60e5fb74e8adbc, type: 3}
+  - {fileID: 8300000, guid: b99c236e72a41f34ebaa97d7501087da, type: 3}
+  - {fileID: 8300000, guid: 634c33d2bada7e047820d24af7f40504, type: 3}
+  - {fileID: 8300000, guid: 3f7408e2a49cf92469b07856342da972, type: 3}
+  - {fileID: 8300000, guid: 784d1f970d2009b46aa00cca3d6fab95, type: 3}
+  - {fileID: 8300000, guid: c72905a848c34c647adbda097bcb2ac2, type: 3}
+  - {fileID: 8300000, guid: 2a37e334260715d4c99e1add3ddc605a, type: 3}
+  - {fileID: 8300000, guid: e48716aabb1809b479e9ce651e29dd49, type: 3}
+  - {fileID: 8300000, guid: d699cf14c71d6a9418c619acc80314e2, type: 3}
+  - {fileID: 8300000, guid: ae163c9992349f9458af2c258c9c5fe9, type: 3}
+  MusicaFundo: {fileID: 8300000, guid: aa7e18111e3fc944882e000ff4e8c587, type: 3}
+  Onetime: {fileID: 8300000, guid: b3a943aa2a444f743b95ba05a94649f2, type: 3}
+  volume: 1
