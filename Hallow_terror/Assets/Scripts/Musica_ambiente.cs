@@ -11,6 +11,10 @@ public class Musica_ambiente : MonoBehaviour
     public AudioClip fundoFlorest;
     private AudioSource audiosfundoFlorest;
 
+    public float fundoFlorestVolume = 10f;
+    public float FundoTensoFundoTensoVolume = 10f;
+    public float secondFundoTensoVolume = 10f;
+
     void Start()
     {
         audioNonoCifundoTensorcle = gameObject.AddComponent<AudioSource>();
