@@ -1175,7 +1175,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: VOLTAR?
+  m_text: TENTAR DE NOVO?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1202,8 +1202,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 3.2
+  m_fontSizeBase: 3.2
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1529,6 +1529,103 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_RenderingLayers: 1
   m_ShadowRenderingLayers: 1
+--- !u!1001 &2107935928
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2636451132234020079, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1251.4292
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636451132234020079, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636451132234020079, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1028.2507
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636451132234020079, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636451132234020079, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636451132234020079, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636451132234020079, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636451132234020079, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636451132234020079, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2636451132234020079, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4963183425706989858, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: m_Name
+      value: Villagers_JumpscareSounds
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266199892466374255, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: Espancamento.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6266199892466374255, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: 'Espancamento.Array.data[0]'
+      value: 
+      objectReference: {fileID: 8300000, guid: b99c236e72a41f34ebaa97d7501087da, type: 3}
+    - target: {fileID: 6266199892466374255, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: 'Espancamento.Array.data[1]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 634c33d2bada7e047820d24af7f40504, type: 3}
+    - target: {fileID: 6266199892466374255, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: 'Espancamento.Array.data[2]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 3f7408e2a49cf92469b07856342da972, type: 3}
+    - target: {fileID: 6266199892466374255, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: 'Espancamento.Array.data[3]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 784d1f970d2009b46aa00cca3d6fab95, type: 3}
+    - target: {fileID: 6266199892466374255, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: 'Espancamento.Array.data[4]'
+      value: 
+      objectReference: {fileID: 8300000, guid: c72905a848c34c647adbda097bcb2ac2, type: 3}
+    - target: {fileID: 6266199892466374255, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: 'Espancamento.Array.data[5]'
+      value: 
+      objectReference: {fileID: 8300000, guid: 2a37e334260715d4c99e1add3ddc605a, type: 3}
+    - target: {fileID: 6266199892466374255, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: 'Espancamento.Array.data[6]'
+      value: 
+      objectReference: {fileID: 8300000, guid: e48716aabb1809b479e9ce651e29dd49, type: 3}
+    - target: {fileID: 6266199892466374255, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: 'Espancamento.Array.data[7]'
+      value: 
+      objectReference: {fileID: 8300000, guid: d699cf14c71d6a9418c619acc80314e2, type: 3}
+    - target: {fileID: 6266199892466374255, guid: 0ddb257038fb3874791341241b50271b, type: 3}
+      propertyPath: 'Espancamento.Array.data[8]'
+      value: 
+      objectReference: {fileID: 8300000, guid: ae163c9992349f9458af2c258c9c5fe9, type: 3}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0ddb257038fb3874791341241b50271b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1538,3 +1635,4 @@ SceneRoots:
   - {fileID: 117788966}
   - {fileID: 505181663}
   - {fileID: 860840719}
+  - {fileID: 2107935928}

@@ -870,7 +870,6 @@ GameObject:
   - component: {fileID: 36482461}
   - component: {fileID: 36482460}
   - component: {fileID: 36482463}
-  - component: {fileID: 36482464}
   m_Layer: 0
   m_Name: FugaTeleporter
   m_TagString: Untagged
@@ -984,34 +983,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Teleport
   Teleport_caveOut: {fileID: 1181973809}
   Player: {fileID: 83751814556089156}
---- !u!114 &36482464
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 36482458}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce9362e6879ccef408456c384b7cab68, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CutsceneStart
-  UnityEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  Quests: {fileID: 531528233047612437}
 --- !u!1001 &36660563
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6156,7 +6127,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2847447817621697771, guid: c8c6496b92d63d94cba3f1b7d0222447, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.5
+      value: -0.3
       objectReference: {fileID: 0}
     - target: {fileID: 2847447817621697771, guid: c8c6496b92d63d94cba3f1b7d0222447, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6216,7 +6187,10 @@ PrefabInstance:
       addedObject: {fileID: 248457554}
     - targetCorrespondingSourceObject: {fileID: 3229074442046746193, guid: c8c6496b92d63d94cba3f1b7d0222447, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 248457560}
+      addedObject: {fileID: 248457563}
+    - targetCorrespondingSourceObject: {fileID: 3229074442046746193, guid: c8c6496b92d63d94cba3f1b7d0222447, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 248457564}
   m_SourcePrefab: {fileID: 100100000, guid: c8c6496b92d63d94cba3f1b7d0222447, type: 3}
 --- !u!1 &248457553 stripped
 GameObject:
@@ -6418,7 +6392,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 0.0008
-  m_Radius: 0.001
+  m_Radius: 0.0008
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -6429,7 +6403,7 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2847447817621697771, guid: c8c6496b92d63d94cba3f1b7d0222447, type: 3}
   m_PrefabInstance: {fileID: 248457552}
   m_PrefabAsset: {fileID: 0}
---- !u!65 &248457560
+--- !u!65 &248457563
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6444,12 +6418,25 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.109042324, y: 0.066548064, z: 0.093352444}
   m_Center: {x: -2.3966374e-16, y: 0.033729672, z: 0.0037475587}
+--- !u!114 &248457564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 248457553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0ebff1384356640ad5e33b190ec18d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GameOver_1perseguicao
+  Scene: JumpScary
 --- !u!1 &252023025
 GameObject:
   m_ObjectHideFlags: 0
@@ -24991,6 +24978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c0ebff1384356640ad5e33b190ec18d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameOver_1perseguicao
+  Scene: Jumpscare_Warrior
 --- !u!95 &1076788697
 Animator:
   serializedVersion: 7
@@ -33729,6 +33717,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c0ebff1384356640ad5e33b190ec18d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameOver_1perseguicao
+  Scene: Jumpscare_Warrior
 --- !u!1 &1435211613
 GameObject:
   m_ObjectHideFlags: 0
@@ -48447,7 +48436,7 @@ Transform:
   m_GameObject: {fileID: 2062477326}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 502.15, y: 0, z: 446.59}
+  m_LocalPosition: {x: 501.11, y: 0, z: 446.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
