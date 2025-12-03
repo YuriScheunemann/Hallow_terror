@@ -29358,7 +29358,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Ap\xF3s a fuma\xE7a abixar voc\xEA volta imediatamente para a vila."
+  m_text: "Ap\xF3s a fuma\xE7a baixar voc\xEA tenta voltar o mais r\xE1pido poss\xEDvel
+    para a vila.\r\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -35551,25 +35552,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1359863931}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce9362e6879ccef408456c384b7cab68, type: 3}
+  m_Script: {fileID: 11500000, guid: f9f2957fcd06c5b44bd66e76dd8c0ae6, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CutsceneStart
-  UnityEvent:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 1
-        m_CallState: 2
-  Quests: {fileID: 0}
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerSwapScene
+  Scenename: Victory
 --- !u!1 &1360258352
 GameObject:
   m_ObjectHideFlags: 0
@@ -56183,6 +56169,7 @@ GameObject:
   - component: {fileID: 2637549365723685899}
   - component: {fileID: 8027692578469278356}
   - component: {fileID: 4829571898771233057}
+  - component: {fileID: 8095782644668974980}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -60546,6 +60533,18 @@ MonoBehaviour:
   moveSpeed: 12.5
   rotationSpeed: 100
   AudioWalk: {fileID: 8300000, guid: fbf2596161a995c46b246ddf768390f8, type: 3}
+--- !u!114 &8095782644668974980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 83751814556089156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fed80bcafc59a44b8682c10136f7e2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Quit
 --- !u!1 &8165343855508124197
 GameObject:
   m_ObjectHideFlags: 0
